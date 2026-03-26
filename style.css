@@ -1,0 +1,154 @@
+@font-face{
+    font-family: 'carmela';
+    font-weight: 400; /*(bold)*/
+    font-style: normal;
+    src: url('carmela.woff2') format('woff2'),
+        url('carmela.woff') format('woff');
+}
+
+*{
+    font-family:almoni;
+}
+    @font-face{
+        font-family: 'almoni';
+        font-weight: 400; /*(bold)*/
+        font-style: normal;
+        src: url('font/almoni-dl-aaa-400.woff') format('woff');
+    }
+    @font-face{
+        font-family: 'digital-7';
+        font-weight: 400; /*(bold)*/
+        font-style: normal;
+        src: url('font/digital-7.woff') format('woff');
+    }
+   
+
+
+    
+		
+		.overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .overlay:target {
+                visibility: visible;
+                opacity: 1;
+            }
+
+        .popup {
+            margin: 70px auto;
+			border-radius: 4px;
+			width: 892px;
+			position: relative;
+			color: white;
+			text-align: center;  
+			padding-bottom: 27px;
+			
+        }
+		.pwin{
+font-size: 30px;
+color: #0a0a0a;
+		}
+		.plose{
+			font-size: 30px;
+			color: #0a0a0a;
+					}
+		#popup1 .popup{
+			background: #A2CF39;
+		}
+		#popup2 .popup{
+			background-color: rgb(243, 203, 215);
+		}
+		#popup1 .popup .header{
+			background-color: #28758c;
+		}
+		#popup2 .popup .header{
+			background-color: rgb(255, 3, 78);
+		}
+    	.popup .header {
+				height: 223px;
+				vertical-align: middle;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-content: center;
+				flex-direction: column;
+				font-size: 50px;
+				line-height: 1;
+			}
+		.popup span.sug {
+   				 font-size: 100px;
+			    font-weight: bold;
+		}
+		 .popup li{
+			font-size: 30px;
+			width: 50%;
+			margin: auto;
+			text-align: right;
+			list-style-type:"\2714"; 
+			padding-right: 20px;
+		}
+		#popup2 .popup li{
+			color:#0096B6;
+		}
+		 .popup a.chazor_buttom{
+			width: 111px;
+			display: inline-block;
+			height: 49px;
+			line-height: 49px;
+			font-size: 24px;
+			box-sizing: border-box;
+			float: right;
+			margin-right: 32px;
+			color: #ffffff;
+   			text-decoration: none;
+		}
+		#popup1 .popup a.chazor_buttom{
+			border: 2px solid #FFFFFF;
+		}
+		#popup2 .popup a.chazor_buttom{
+			border: 2px solid #0a0a0a;
+			color: #0a0a0a;
+		}
+		.popup a.chazor_buttom:before{
+			content: "\276e";
+			margin-left: 15px;
+		}
+		.popup a.ishur_buttom:after{
+			content: "\276f";
+			margin-right: 15px;
+		}
+		.popup a.ishur_buttom{
+			line-height: 49px;
+			padding: 0 21px;
+			border-radius: 4px;
+			display: inline-block;
+			font-size: 24px;
+			float: left;
+    		margin-left: 32px;
+			color: #ffffff;
+   			text-decoration: none;
+		}
+		#popup1 .popup a.ishur_buttom{
+			background-color: #288C66;
+		}
+		#popup2 .popup a.ishur_buttom{
+			background-color: #57a7b9;
+		}
+		.popup .clear{
+			clear: both;
+		}
+		.popup ul {
+  			  margin: 30px 0;
+		}
+		.popup span.time {
+  			  display: none;
+		}
+		

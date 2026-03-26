@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorful Hourglass Timer</title>
+<style>
+    .hourglass {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        position: relative;
+        margin: 50px auto;
+    }
+
+    .hourglass:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid #FF5733; /* Orange color */
+        position: absolute;
+        top: 0;
+        left: -50px;
+    }
+
+    .hourglass:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 100px solid #FF5733; /* Orange color */
+        position: absolute;
+        bottom: 0;
+        left: -50px;
+    }
+</style>
+</head>
+<body>
+<div class="hourglass"></div>
+
+<script>
+    let timeLeft = 120; // 2 minutes in seconds
+    let countdown = setInterval(function() {
+        timeLeft--;
+        if (timeLeft < 0) {
+            clearInterval(countdown);
+        } else {
+            document.querySelector('.hourglass:before').style.borderBottomWidth = `${timeLeft}px`;
+            document.querySelector('.hourglass:after').style.borderTopWidth = `${timeLeft}px`;
+        }
+    }, 1000);
+</script>
+</body>
+</html>
