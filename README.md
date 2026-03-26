@@ -1,4 +1,4 @@
-# Memory Game - HTML Project
+# Memory Game - JavaScript Project
 
 This is a simple memory card game built using HTML, CSS, and JavaScript.
 
